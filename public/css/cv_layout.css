@@ -1,0 +1,118 @@
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(251, 101, 66)    ;
+}
+  p   {
+                    margin-left:30;
+                }
+                tr {
+                    padding : 55px;
+                }
+                td {
+                    padding : 8px;
+                }
+                th {
+                    box-shadow: 3px 3px 9px 1px ;
+                }
+                img {
+                    border-radius:50% ;
+                    height: 140px;
+                    width: 100px;
+                    opacity: 80% ;  
+                    margin-left:500px ;
+                    position : absolute;
+                    top: 220px;
+                    right: 230px;   
+                    box-shadow: 6px 6px 16px 2px;
+                }   
+/* Style the header */
+header {
+  background-color: rgb(122, 69, 62);
+  padding: 1px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+div.absolute {
+  position: absolute;
+  top: 220px;
+  right: 600px;
+  height: 100px;  
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 550px;
+  background: rgb(251, 127, 66) ;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+form {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.submitButton{
+  width: 100px;
+  height: 35px;
+  box-shadow: rgb(122, 69, 62) 3px 3px 9px 1px;
+  text-align: center;
+  border-radius: 9999px;
+}
+
+article {
+  float: left;
+  padding: 22px;
+  padding-right: 15px;
+  width: 75%;
+  background-color: rgb(251, 101, 66) ;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+background-color: rgb(122, 69, 62);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+select{
+  border-radius: 9999px;
+  width: 175px;
+  text-align: center;
+  height: 24px;
+}
+
+input
+{
+  border-radius: 9999px;
+  border-style: inset;
+  height: 22px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
