@@ -12,11 +12,12 @@
                       <th  >Data Pribadi</th>
                     </tr>
                 </table>
+                <div class="imgblock">
                 <table style="margin-left:25 ;">
                     <tr> 
                         <td>Nama </td>
-                        <td>: </td>
-                        <td style="position:relative ; ">Rakhansyah Lubis    </td><img src="tes.jpg">
+                        <td>: </td> 
+                        <td style="position:relative ; ">Rakhansyah Lubis</td>
                     </tr> 
                     <tr>
                         <td>Jenis Kelamin </td>
@@ -53,7 +54,7 @@
                         <td>: </td>
                         <td>manusiakocak430@gmail.com </td>
                     </tr>
-                </table>
+                </table><img src="tes.jpg"></div>
 
 
                 <table style="margin-left:5; width:100% ; background-color: rgb(122, 69, 62);">
