@@ -11,11 +11,11 @@
    </header>
    <div id="main" class="row">
    <nav>
-    <ul>
-    <li><a href="/">CV</a></li><br>
-      <li><a href="/form">Formulir Biodata</a></li><br>
-      <li><a href="/data">Tampilkan Data</a></li>
-    </ul>
+    
+   <a href="/">CV</a>
+    <a href="/form">Formulir Biodata</a>
+    <a href="/data">Tampilkan Data</a>
+    
   </nav>
   
            @yield('content')

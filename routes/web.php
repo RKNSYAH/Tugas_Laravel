@@ -21,7 +21,8 @@ Route::get('/form', function()
 {
    return View::make('pages.form');
 });
-Route::get('/data', function()
+Route::get('/data',function()
 {
    return View::make('pages.data');
 });
+Route::get('/data','App\Http\Controllers\FormController@data');

@@ -1,5 +1,5 @@
 
-
+@import url('../node_modules/font-awesome/css/font-awesome.min.css');
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -39,8 +39,18 @@ nav {
   float: left;
   width: 15%;
   height: 74vh;
+  overflow: auto;
   background: rgb(251, 127, 66) ;
   padding: 20px;
+}
+nav a{
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: rgb(232, 116, 59);
+  color: black;
 }
 
 /* Style the list inside the menu */
@@ -60,6 +70,7 @@ form {
   box-shadow: rgb(122, 69, 62) 3px 3px 9px 1px;
   text-align: center;
   border-radius: 9999px;
+  overflow: hidden;
 }
 
 article {
@@ -75,6 +86,34 @@ section::after {
   content: "";
   display: table;
   clear: both;
+}
+.btnTwo {
+  position : relative;
+  width : 200px;
+  height : 100px;
+  margin-top: -100px;
+  padding-top: 2px;
+  background : #26A69A;
+  left : -250px;
+  transition : .3s;
+}
+.btnText {
+  color : rgb(0, 0, 0);
+  transition : .3s;
+  top: -5px;
+  position: relative;
+}
+
+.submitButton:hover .btnTwo{ /*When hovering over .button change .btnTwo*/
+  left: -100px;
+}
+.submitButton:hover .btnText{ /*When hovering over .button change .btnText*/
+  margin-left : 65px;
+}
+.btnText2 {
+  margin-top : 63px;
+  margin-right : -130px;
+  color : #FFF;
 }
 
 /* Style the footer */
@@ -99,6 +138,34 @@ select{
   height: 24px;
 }
 
+td button{
+  width: 60px;
+  height: 25px;
+  box-shadow: rgb(122, 69, 62) 2px 2px 7px 1px;
+  text-align: center;
+  transition: all 500ms ease; 
+  border-radius: 9999px;
+  
+}
+.btndelete{
+  background: #cf1b2a;
+}
+
+.btnedit{
+  background:rgb(133, 185, 48);
+}
+
+.btndelete:hover{
+  color: white;
+  border: #e42f01 solid 2px;
+  background:rgb(221, 30, 30);
+}
+.btnedit:hover{
+  color: white;
+  border: #5bf006 solid 2px;
+  background:rgb(0, 180, 15);
+}
+
 
 input
 {
@@ -106,6 +173,9 @@ input
   border-style: inset;
   height: 22px;
 }
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
 @media (max-width: 540px) {
   .imgblock
   {
@@ -113,16 +183,14 @@ input
   }
 }
 
-@media (max-height: 870px) {
-  nav{
-    min-height: 680px;
-  }
-}
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 800px) {
   nav, article {
-    text-align: center;
     width: 100%;
+    position: relative  ;
     height: auto;
+  }
+  nav a{
+    float: left;
+    padding: 16px;
   }
 }

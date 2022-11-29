@@ -42,9 +42,6 @@
             <label for="TTL">Tempat Tanggal Lahir :</label><br>
             <input type="date" name="TTL" id="TTL"><br><br>
 
-            <label for="negara">Kewarganegaraan :</label><br>
-            <input type="text" name="negara" id="negara"><br><br>
-
             <label for="kawin">Status Perkawinan :</label><br>
             <select name="kawin" id="kawin">
 	<option value="" disabled selected>--Perkawinan--</option>
@@ -55,16 +52,21 @@
   </select><br><br>
 
 
-<label for="alamat" class="pindahkanan">Alamat :</label><br>
-<input type="text" name="alamat" id="alamat"  class="pindahkanan"><br><br>
+<label for="alamat" >Alamat :</label><br>
+<input type="text" name="alamat" id="alamat"  ><br><br>
 
-<label for="telp" lass="pindahkanan">Nomor Telepon :</label><br>
-<input type="tel" name="telp" id="telp" class="pindahkanan"><br><br>
+<label for="telp" >Nomor Telepon :</label><br>
+<input type="tel" name="telp" id="telp"><br><br>
 
-<label for="email" class="pindahkanan">Email :</label><br>
-<input type="text" name="email" id="email" class="pindahkanan"><br><br>
+<label for="email" >Email :</label><br>
+<input type="text" name="email" id="email" ><br><br>
 
-            <button type="submit" class="submitButton">Submit</button>
+            <button type="submit" class="submitButton">
+              
+    <p class="btnText">Submit</p>
+    <div class="btnTwo">
+      <p class="btnText2">-></p>
+    </div></button>
 
                     </tr> 
                     
