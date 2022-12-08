@@ -1,22 +1,79 @@
-
-@import url('../node_modules/font-awesome/css/font-awesome.min.css');
+@import url('https://css.gg/arrow-right.css');
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-background-color: rgb(251, 101, 66);
-
+  font-family: "Ibarra Real Nova",serif;
+  background-color: rgb(255, 235, 193);
+  margin-top: 5px;
 }
-  p   {
+
+/* Home Page styling */
+.home-def{
+  margin-top: 0px;
+}
+#main{
+  overflow: hidden;
+}
+#menu-holder {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.menu{
+  color: rgb(255, 235, 193);
+  font-size: clamp(3rem, 8vw, 8rem);
+  display: block;
+  text-decoration: none;
+  padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+  transition: opacity 400ms ease;
+  
+}
+#menu-items {
+  margin-left: clamp(4rem, 12vw, 48rem);
+  position: relative;
+  z-index: 2;
+}
+#menu-items:hover > .menu{
+  opacity: 0.3;
+}
+#menu-items:hover > .menu:hover{
+  opacity: 1;
+  color: rgb(255, 235, 193);
+}
+#menu-background{
+  height: 100vh;
+  width: 100vw;
+  background-color:rgb(173, 139, 115);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  transition: 700ms ease;
+}
+#menu-items:hover ~ #menu-background{
+  background-color:rgb(116, 86, 64);
+}
+#home-footer{
+  margin-top: 90vh;
+  margin-left: 15%;
+  color: rgb(255, 235, 193);
+}
+/* Home Page styling */
+#copyright{
+  z-index: 3;
+}
+p   {
     margin-left:30;
 }
-tr {
-    padding : 55px;
-}
-td {
+.Default_style_td {
     padding : 8px;
 }
+.data_display{
+  padding: 4px;
+}
 th {
-    box-shadow: 3px 3px 9px 1px ;
+    box-shadow: 5px 3px 10px 1px ;
+    background-color:rgb(173, 139, 115);
+    text-align: center;
 }
 img {
     border-radius:50% ;
@@ -25,9 +82,8 @@ img {
     opacity: 80% ;  
     box-shadow: 5px 5px 16px 2px;
 }   
-/* Style the header */
 header {
-  background-color: rgb(122, 69, 62);
+  background-color: rgb(173, 139, 115);
   padding: 1px;
   text-align: center;
   font-size: 35px;
@@ -37,26 +93,23 @@ header {
 /* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
-  width: 15%;
-  height: 74vh;
+  height: 90vh;
   overflow: auto;
-  background: rgb(251, 127, 66) ;
+  background: rgb(233, 206, 166);
   padding: 20px;
+  transition: all 0.3s;
+  width: 13%;
 }
 nav a{
   display: block;
   padding: 16px;
   text-decoration: none;
+  color: inherit;
+  transition: all 300ms ease; 
 }
 nav a:hover {
-  background-color: rgb(232, 116, 59);
+  background-color: rgb(206, 171, 147);
   color: black;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
 }
 
 form {
@@ -64,21 +117,35 @@ form {
   text-align: center;
 }
 
+.Def_table{
+  width: 100%;
+}
+
 .submitButton{
   width: 100px;
   height: 35px;
-  box-shadow: rgb(122, 69, 62) 3px 3px 9px 1px;
+  box-shadow: rgb(206, 171, 147) 3px 3px 9px 1px;
   text-align: center;
   border-radius: 9999px;
   overflow: hidden;
 }
-
+.resetButton{
+  width: 100px;
+  height: 35px;
+  box-shadow: rgb(206, 171, 147) 3px 3px 9px 1px;
+  text-align: center;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+.navflex{
+  display: flex;
+}
 article {
   float: left;
   padding: 22px;
   padding-right: 15px;
   width: 75%;
-  background-color: rgb(251, 101, 66) ;
+  background-color: rgb(255, 235, 193);
 }
 
 /* Clear floats after the columns */
@@ -91,16 +158,17 @@ section::after {
   position : relative;
   width : 200px;
   height : 100px;
-  margin-top: -100px;
+  margin-top: -97px;
   padding-top: 2px;
-  background : #26A69A;
+  background : #1acc79;
   left : -250px;
   transition : .3s;
 }
 .btnText {
   color : rgb(0, 0, 0);
   transition : .3s;
-  top: -5px;
+  text-align: center;
+  top: 3px;
   position: relative;
 }
 
@@ -113,12 +181,20 @@ section::after {
 .btnText2 {
   margin-top : 63px;
   margin-right : -130px;
-  color : #FFF;
+}
+.gg-arrow-right {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 22px;
+  left: 150px;
+  top: -3px;
 }
 
 /* Style the footer */
 footer {
-background-color: rgb(122, 69, 62);
+background-color: rgb(173, 139, 115);
   padding: 10px;
   text-align: center;
   color: white;
@@ -138,14 +214,14 @@ select{
   height: 24px;
 }
 
-td button{
+.data_display button{
   width: 60px;
   height: 25px;
-  box-shadow: rgb(122, 69, 62) 2px 2px 7px 1px;
+  box-shadow: rgb(206, 171, 147) 2px 2px 7px 1px;
   text-align: center;
   transition: all 500ms ease; 
   border-radius: 9999px;
-  
+  line-height: normal;
 }
 .btndelete{
   background: #cf1b2a;
@@ -155,17 +231,27 @@ td button{
   background:rgb(133, 185, 48);
 }
 
+.btnshow{
+  background:rgb(68, 185, 206);
+}
+
 .btndelete:hover{
   color: white;
   border: #e42f01 solid 2px;
   background:rgb(221, 30, 30);
 }
+
 .btnedit:hover{
   color: white;
   border: #5bf006 solid 2px;
   background:rgb(0, 180, 15);
 }
 
+.btnshow:hover{
+  color: white;
+  border: #0616f0 solid 2px;
+  background:rgb(3, 133, 209);
+}
 
 input
 {
@@ -188,6 +274,7 @@ input
     width: 100%;
     position: relative  ;
     height: auto;
+    max-width: 100%;
   }
   nav a{
     float: left;

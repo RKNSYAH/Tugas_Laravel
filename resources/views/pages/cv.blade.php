@@ -1,101 +1,101 @@
 @extends('layouts.default')
 @section('content')
 <link rel="stylesheet" href="/css/cv_layout.css">
-<body>
+<body class="test">
 
 <section>
 
   
   <article>
-        <table style="margin-left:5; width:100% ; background-color:rgb(122, 69, 62);">
+        <table class="Def_table">
                     <tr>
-                      <th  >Data Pribadi</th>
+                      <th>Data Pribadi</th>
                     </tr>
                 </table>
                 <div class="imgblock">
                 <table style="margin-left:25 ;">
                     <tr> 
-                        <td>Nama </td>
-                        <td>: </td> 
-                        <td style="position:relative ; ">Rakhansyah Lubis</td>
+                        <td class="Default_style_td">Nama </td>
+                        <td class="Default_style_td">: </td> 
+                        <td class="Default_style_td" style="position:relative ; ">Rakhansyah Lubis</td>
                     </tr> 
                     <tr>
-                        <td>Jenis Kelamin </td>
-                        <td>: </td>
-                        <td>Laki Laki </td>
+                        <td class="Default_style_td">Jenis Kelamin </td>
+                        <td class="Default_style_td">: </td>
+                        <td class="Default_style_td">Laki Laki </td>
                     </tr> 
                     <tr>
-                        <td>TTL </td>
-                        <td>: </td>
-                        <td>Bandung, 03 Feb 2005 </td>
+                        <td class="Default_style_td">TTL </td>
+                        <td class="Default_style_td">: </td>
+                        <td class="Default_style_td">Bandung, 03 Feb 2005 </td>
                     </tr> 
                     <tr>
-                        <td>Kewarganegaraan </td>
-                        <td>: </td>
-                        <td>Indonesia</td>
+                        <td class="Default_style_td">Kewarganegaraan </td>
+                        <td class="Default_style_td">: </td>
+                        <td class="Default_style_td">Indonesia</td>
                     </tr> 
                     <tr>
-                        <td>Status Perkawinan </td>
-                        <td>: </td>
-                        <td>Belum </td>
+                        <td class="Default_style_td">Status Perkawinan </td>
+                        <td class="Default_style_td">: </td>
+                        <td class="Default_style_td">Belum </td>
                     </tr> 
                     <tr>
-                        <td>Alamat </td>
-                        <td>: </td>
-                        <td>Jl. Muararajeun Tengah no 26 </td>
+                        <td class="Default_style_td">Alamat </td>
+                        <td class="Default_style_td">: </td>
+                        <td class="Default_style_td">Jl. Muararajeun Tengah no 26 </td>
                     </tr>    
                     <tr>
-                        <td>No Telp </td>
-                        <td>: </td>
-                        <td>081902042709 </td>
+                        <td class="Default_style_td">No Telp </td>
+                        <td class="Default_style_td">: </td>
+                        <td class="Default_style_td">081902042709 </td>
                     </tr>
                     <tr>
-                        <td>Email </td>
-                        <td>: </td>
-                        <td>manusiakocak430@gmail.com </td>
+                        <td class="Default_style_td">Email </td>
+                        <td class="Default_style_td">: </td>
+                        <td class="Default_style_td">manusiakocak430@gmail.com </td>
                     </tr>
                 </table><img src="tes.jpg"></div>
 
 
-                <table style="margin-left:5; width:100% ; background-color: rgb(122, 69, 62);">
+                <table class="Def_table">
                     <tr>
                       <th >Riwayat Pendidikan</th>
                     </tr>
                 </table>
-                <table style="margin-left:25 ;">
+                <table>
                     <tr>
-                        <td>2012-2018 </td>
-                        <td>: </td>
-                        <td>SDN Sabang Bandung </td>
+                        <td class="Default_style_td">2012-2018 </td>
+                        <td class="Default_style_td">: </td>
+                        <td class="Default_style_td">SDN Sabang Bandung </td>
                         
                     </tr> 
                     <tr>
-                        <td>2018-2021 </td>
-                        <td>: </td>
-                        <td>MTs Miftahul Huda </td>
+                        <td class="Default_style_td">2018-2021 </td>
+                        <td class="Default_style_td">: </td>
+                        <td class="Default_style_td">MTs Miftahul Huda </td>
                     </tr> 
                     <tr>
-                        <td>2021-2024 </td>
-                        <td>: </td>
-                        <td>SMKN 2 Bandung </td>
+                        <td class="Default_style_td">2021-2024 </td>
+                        <td class="Default_style_td">: </td>
+                        <td class="Default_style_td">SMKN 2 Bandung </td>
                     </tr>  
                 </table>
                         
-                <table style="margin-left:5; width:100% ; background-color: rgb(122, 69, 62);">
+                <table class="Def_table">
                     <tr>
                       <th >Keahlian</th>
                     </tr>
                 </table>
-                <table style="margin-left:25 ;">
+                <table>
                     <tr>
-                        <td>Informasi Teknologi </td>
-                        <td>: </td>
-                        <td>Javascript, C++ </td>
+                        <td class="Default_style_td">Informasi Teknologi </td>
+                        <td class="Default_style_td">: </td>
+                        <td class="Default_style_td">Javascript, C++ </td>
                     </tr> 
                     <tr>
-                        <td>Bahasa </td>
-                        <td>: </td>
-                        <td>Bahasa Indonesia, English </td>
+                        <td class="Default_style_td">Bahasa </td>
+                        <td class="Default_style_td">: </td>
+                        <td class="Default_style_td">Bahasa Indonesia, English </td>
                     </tr> 
  
                 </table>

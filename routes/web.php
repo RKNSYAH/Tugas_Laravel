@@ -15,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function()
 {
+   return View::make('pages.home');
+});
+Route::get('/cv', function()
+{
    return View::make('pages.cv');
 });
 Route::get('/form', function()
@@ -25,4 +29,11 @@ Route::get('/data',function()
 {
    return View::make('pages.data');
 });
-Route::get('/data','App\Http\Controllers\FormController@data');
+Route::get('/cvshow',function()
+{
+   return View::make('pages.cvshow');
+});
+Route::get('/data','App\Http\Controllers\FormController@data')->name('DataPage');
+Route::post('/cvshow','App\Http\Controllers\FormController@PostData');
+Route::post('/data','App\Http\Controllers\FormController@DeleteData');
+Route::post('/form','App\Http\Controllers\FormController@SubmitData');
